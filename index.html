@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🤓 Hélène & PopSchool 💬</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        text-align:left;
+        color: #CE0033;
+        background-color : white;
+        }
+
+
+    .banner {
+        padding: 20px;
+        background-image : url("./images/facesf5.png");
+        background-size: 95%;
+        }
+    
+    h1 {
+        font-size: 42px;
+        }
+    
+    h2 {
+        font-size: 30px;
+        font-weight:lighter;
+        color: black;
+        }
+    
+    .button{
+        background: grey;
+        color: white;
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 5%;
+        box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.5);
+        position: absolute;
+        top: 72%;
+        left: 9.5%;
+        transform: translate(-50%,-50%); 
+        text-align: center;
+        }
+
+    .button:hover {
+        background: #CE0033;
+        color: white;
+        }
+
+    .popup {
+        background: rgba(0,0,0,0.4); /*ça correspond au fond gris clair de la full page quand popup actif*/
+        width:100%;
+        height:100%;
+        position:absolute;
+        top: 0;
+        display: none; /*cette variable est importante soit "flex" soit "none" cf JS a la fin */
+        justify-content:center;
+        align-items:center;
+        text-align : center;
+        }
+
+    .popup-content {
+        width:50%;
+        height:30%;
+        position:relative;
+        background:white;
+        padding: 10px;
+        border-radius:5px;
+        }
+
+    .close {
+        position:absolute; /*ce point close correspond à l'image de la croix pour fermer le popup*/
+        top: -15px;
+        right: -15px;
+        background: white;
+        border-radius: 50%;
+        width:30px;
+        height:30px;
+        cursor:pointer;
+        }
+
+    .intro {
+        padding: 20px;
+        border-radius: 2%;
+        }
+
+    .moi {
+        padding: 20px;
+        color: GREY;
+        font-size: 10px;
+        line-height: 5px;
+        }  
+
+    .container {
+        padding:20px;
+        }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:5em;
+        grid-auto-rows: 350px;
+        }
+
+    .row img {
+        border-radius: 50%;
+        }
+    .row p {
+        color: black;
+        background-color: rgb(233,224,215);
+        font-size: 14px;
+        padding:15px;
+    }
+
+    .corps {
+        padding: 20px;
+        margin-top: 30px;
+        color: GREY;
+        font-size: 10px;
+        line-height: 5px;
+        }    
+
+    .corps img {
+        border-radius: 1%;
+        }
+    
+    .containerbis{
+        padding:20x;
+        margin-top:100px;
+        }
+
+    .rowbis{
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-gap:5em;
+        grid-auto-rows: 100px;
+    }
+
+    .expériences {
+        padding: 20px;
+        margin-top:100px;
+        margin-bottom:100px;
+        color: grey;
+        font-size: 10px;
+        line-height: 5px;
+        }
+    
+    .expériences img {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        }
+    
+    .expériences img:hover {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        }
+        
+    footer {
+        background-color:#F2EEE5;
+        background-size: cover;
+        padding:5px;
+        margin:0;
+        border:0;
+        font-size: 20px;
+        text-align:center;
+        }
+
+    a {
+        color: grey;
+        padding: 10px;
+        transition: all 200ms ease-in-out;
+        }
+
+    a:hover {
+        color: #CE0033;
+        }
+
+    </style>
+</head>
+
+
+<body>
+<section>
+
+    <div class="banner">
+        <img src="images/logo.png" alt="logo SIMPLON" width="150">
+        <br />
+        <h1>
+            Pourquoi intégrer le Programme
+            <br/>
+            <br/>
+            Simplon x Apple Foundation ?
+        </h1>
+        <br />
+        <h2>
+            <em> Suivez-moi, je vous montre le chemin </em>
+        </h2>
+        <br />
+    </div>
+
+    <div class="container">
+        <a href="#" class="button" id="button"> On reste en contact ? </a>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <img src="images/close.png" alt="close" class="close">
+            <p>
+                Voici mes coordonnées
+                <br />💬
+                <br />
+                <br />07.68.10.42.63
+                <br />hdelaporte@gmail.com
+                <br />
+                <br />😇
+            </p>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="intro">
+        <img src="images/intro2.png" alt="Bienvenue dans mon univers" width="500">
+    </div>
+
+    <br />
+
+        <div class="moi">
+            <h1>
+                Mieux me connaitre
+            </h1>
+            <br />
+        
+        </div>
+        
+        <div class="container">
+            <div class="row">
+        
+                <div class="col-md-4">
+                    <img src="images/10.png" alt="Pastille illustration" width="200">
+                    <p>
+                    Je souhaite intégrer le monde du numérique et continuer de placer le client au coeur de mon quotidien et en y ajoutant une dimension "produit".
+                    Je construis ce projet depuis l'été dernier et j'aimerais consolider mes connaissances techniques de programmation et les règles d'UX. 
+                    
+                    </p>
+                </div>
+        
+                <div class="col-md-4">
+                    <img src="images/11.png" alt="Pastille illustration" width="200">
+                    <p>
+                        Après 7 ans passés dans de grands groupes Français à l'international, j'ai acquis de multiples compétences : la gestion de projet, la réalisation du budget annuel, la gestion des opérations, le management, etc.
+                        Je connais aussi le fonctionnement et les priorités des équipes métiers (Marketing, Commercial, Opérations).
+                    </p>
+                </div>
+        
+                <div class="col-md-4">
+                    <img src="images/12.png" alt="Pastille illustration" width="200">
+                    <p>
+                        J'ai plusieurs passions qui m'animent au quotidien et qui me permettent de m'équilibrer : Le yoga, les podcasts et les voyages. 
+                        J'espère pouvoir d'ici quelques temps donner de mon temps libre et mes connaissances numériques et accompagner une organisation zéro déchet / humaniste / féministe.  
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+
+    <div class="corps">
+        <h1>
+            Pourquoi je candidate
+        </h1>
+        <br />
+        <img src="images/VS.png" alt="image VS illustrant ma candidature" width=800>
+        <br />
+    </div>
+
+    <div class="expériences">
+        <h1>
+            Mes expériences numériques
+        </h1>
+        <br />
+        <div class="containerbis">
+            <div class="rowbis">
+                <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <a href="https://www.udemy.com/course/ux-web-design-master-course-strategy-design-development/" target="_blank">
+                            <img src="images/udemy.jpg" alt="logo Udemy" width=200>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="https://www.shecodes.io/" target="_blank">
+                        <img src="images/shecodes.png" alt="logo Shecodes" width=200>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="https://www.meetup.com/fr-FR/Le-Wagon-Lisbon-Coding-Station/" target="_blank">
+                        <img src="images/lewagon.png" alt="logo Le Wagon" width=100>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="https://analytics.google.com/analytics/academy/course/6" target="_blank">
+                        <img src="images/googleanalytics.png" alt="logo Google Analytics" width=200>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="https://learndigital.withgoogle.com/ateliersnumeriques/course/digital-marketing" target="_blank">
+                        <img src="images/googlenumerique.jpg" alt="logo Google Ateliers Numeriques" width=150>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <footer>
+        <br />
+        Retrouvez-moi ici ⬇
+        <br />
+        <br />
+        <div id="social">
+                    <a href="https://www.instagram.com/neyneyne/" class="fa fa-instagram" target="_blank"></a></li>
+                    <a href="https://github.com/hdelaporte" class="fa fa-github" target="_blank"></a></li>
+                    <a href="https://twitter.com/hdelaporte1" class="fa fa-twitter" target="_blank"></a></li>
+                    <a href="https://www.linkedin.com/in/hélène-delaporte-75166663/" class="fa fa-linkedin" target="_blank"></a></li>
+
+        </div>
+    </footer>
+
+</section>  
+
+
+<script>
+
+document.getElementById("button").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "flex";
+})
+
+document.querySelector(".close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+})
+
+</script>
+
+
+</body>
+</html
