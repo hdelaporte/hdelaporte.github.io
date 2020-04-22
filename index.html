@@ -5,102 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>coucou</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+
+    body{
+        width:95%;
+        display: block;
+        padding: 20px; 
+        float: center;
+    }
+
+    h1 {
+        color:#CE0033;
+        font-size: 42px;
+        }
+
+    h2 {
+        color: teal;
+        }
+
+    header {
+        text-align: right;
+        }    
+
+    body > section {
+        text-align: center;
+        }
     
-
-        h1 {
-            color: #CE0033;
-            font-size: 42px;
+    body > section img {
+        border-radius: 10px;
         }
 
-        body {
-            background-image: url(images/promo.jpg);
-            background-size: cover;
-            background-attachment: fixed;
+    footer {
+        background-color:#F2EEE5;
+        background-size: cover;
+        padding:5px;
+        margin:0;
+        border:0;
+        font-size: 20px;
+        text-align:center;
+        }   
+
+    a {
+        color: grey;
+        padding: 10px;
+        transition: all 200ms ease-in-out;
         }
 
-        .header {
-            background-color: white;
-            width: 100%;
-            position: fixed;
-            padding: 10px;
+    a:hover {
+        color: #CE0033;
         }
-
-        .section {
-            background: white;
-            width: 60%;
-            padding: 20px;
-            margin: 100px auto;
-            border-image: auto;
-            display: inline-block;
-        }
-
-        aside {
-            float: right;
-        }
-
-
-        .footer {
-            background: white;
-            width: 100%;
-            padding: 20px;
-        }
-
+    
 
     </style>
 
 </head>
 
-
-
 <body>
-    
-    <div class="header">
-        <img src="images/clubic.png" alt="clubic logo" width="100">
-        Téléchargement Comparatifs Tests
-    </div>
+
+    <header>
+        Contact
+        <div id="social">
+            <a href="https://www.instagram.com/neyneyne/" class="fa fa-instagram" target="_blank"></a></li>
+            <a href="https://github.com/hdelaporte" class="fa fa-github" target="_blank"></a></li>
+            <a href="https://twitter.com/hdelaporte1" class="fa fa-twitter" target="_blank"></a></li>
+            <a href="https://www.linkedin.com/in/hélène-delaporte-75166663/" class="fa fa-linkedin" target="_blank"></a></li>
+        </div>
+    </header>
 
     <nav>
+        <h1>
+            Bienvenue
+        </h1>
+        <p>
+            Je suis Hélène Delaporte, et après avoir vécu 7 ans entre le Brésil et le Portugal, j’ai quitté mon poste de chef de
+            projet Amélioration continue pour poser mes valises en France.
+            <br />
+            Mon objectif : continuer de mettre l’utilisateur au centre de mon travail avec une composante design +++
+            <br />
+            <br />
+            Compétences & Expériences
+            <br />
+            <br />
+            🎤 Mener des interviews utilisateurs
+            <br />
+            🤓 Collaborer avec une équipe de développeurs
+            <br />
+            🚀 Management fonctionnel des équipes Marketing et Commerciale
+            <br />
+            👀 Analyser les données et mettre en place des indicateurs business
+            <br />
+            📢Travailler en lean management, CBL ou Co-création
+        </p>
+        <br />
     </nav>
 
-    <div class="section">
-            <h1>
-                A la une
-            </h1>
+    <aside>
+        <p>
+            🧷 Ma boite à outils 
+            <br />
+            Figma
+            <br />
+            Marvelapp
+            <br />
+            HTML / CSS / JS
+            <br />
+            Swift / Swift UI
+            <br />
+            Google Analytics
+        </p>
+    </aside>
+
+
+    <section>
+        <h1>
+            Mes projets
+        </h1>
+        <article>
+            <img src="images/growcity.png" alt="logo GrowCity" width="300">
             <h2>
-                picture    picture     picture   
+                GrowCity
             </h2>
-            <h1>
-                Dernières Actualités
-            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </article>
 
         <article>
+            <img src="images/nash.png" alt="logo Nash" width="300">
             <h2>
-                Le chargeur sans fil le plus rapide du monde
+                Nash
             </h2>
-            <p> Oppo devrait trés bientot ....</p>
-        </article>
-        
-        <article>
-            <h2>
-                L'arcep lance un site qui cartographie la qualité du réseau internet
-            </h2>
-            <p> L'autorité française chargée de réguler ....</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </article>
 
-        <aside>
-            <img src="images/aside.png" alt="promo aside">
-        </aside>
-            
+
+
+
+
+    </section>
+
+
+
+
+<footer>
+    <br />
+    Retrouvez-moi ici
+    <br />
+    <br />
+    <div id="social">
+            <a href="https://www.instagram.com/neyneyne/" class="fa fa-instagram" target="_blank"></a></li>
+            <a href="https://github.com/hdelaporte" class="fa fa-github" target="_blank"></a></li>
+            <a href="https://twitter.com/hdelaporte1" class="fa fa-twitter" target="_blank"></a></li>
+            <a href="https://www.linkedin.com/in/hélène-delaporte-75166663/" class="fa fa-linkedin" target="_blank"></a>
+            </li>
     </div>
+</footer>
 
 
-    <div class="footer">
-        Infos Légales Publicités CGU
 
-    </div>
 
 </body>
