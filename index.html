@@ -1,177 +1,160 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mon Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-
-    body{
-        width:95%;
-        display: block;
-        padding: 20px; 
-        float: center;
-    }
-
-    h1 {
-        color:#CE0033;
-        font-size: 42px;
-        }
-
-    h2 {
-        color: teal;
-        }
-
-    header {
-        text-align: right;
-        }    
-
-    body > section {
-        text-align: center;
-        }
-    
-    body > section img {
-        border-radius: 10px;
-        }
-
-    footer {
-        background-color:#F2EEE5;
-        background-size: cover;
-        padding:5px;
-        margin:0;
-        border:0;
-        font-size: 20px;
-        text-align:center;
-        }   
-
-    a {
-        color: grey;
-        padding: 10px;
-        transition: all 200ms ease-in-out;
-        }
-
-    a:hover {
-        color: #CE0033;
-        }
-    
-
-    </style>
-
 </head>
 
 <body>
 
-    <header>
-        Contact
-        <div id="social">
-            <a href="https://www.instagram.com/neyneyne/" class="fa fa-instagram" target="_blank"></a></li>
-            <a href="https://github.com/hdelaporte" class="fa fa-github" target="_blank"></a></li>
-            <a href="https://twitter.com/hdelaporte1" class="fa fa-twitter" target="_blank"></a></li>
-            <a href="https://www.linkedin.com/in/hélène-delaporte-75166663/" class="fa fa-linkedin" target="_blank"></a></li>
-        </div>
-    </header>
-
     <nav>
-        <h1>
-            Bienvenue
-        </h1>
-        <p>
-            Je suis Hélène Delaporte, et après avoir vécu 7 ans entre le Brésil et le Portugal, j’ai quitté mon poste de chef de
-            projet Amélioration continue pour poser mes valises en France.
-            <br />
-            Mon objectif : continuer de mettre l’utilisateur au centre de mon travail avec une composante design +++
-            <br />
-            <br />
-            Compétences & Expériences
-            <br />
-            <br />
-            🎤 Mener des interviews utilisateurs
-            <br />
-            🤓 Collaborer avec une équipe de développeurs
-            <br />
-            🚀 Management fonctionnel des équipes Marketing et Commerciale
-            <br />
-            👀 Analyser les données et mettre en place des indicateurs business
-            <br />
-            📢Travailler en lean management, CBL ou Co-création
-        </p>
-        <br />
+        <!-- Menu / navigation -->
+        <a href="#" class="button" id="button">Contact</a>
+        <a href='#projets'>Mes Projets </a>
+        <div class="social">
+            <a href="https://www.instagram.com/neyneyne/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://github.com/hdelaporte" class="fa fa-github" target="_blank"></a>
+            <a href="https://twitter.com/hdelaporte1" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/hélène-delaporte-75166663/" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+
     </nav>
 
-    <aside>
+    <div class="popup">
+        <div class="popup-content">
+            <img src="images/close.png" alt="close" class="close">
+            <p>
+                Voici mes coordonnées
+                <br />07.68.10.42.63
+                <br />hdelaporte@gmail.com
+            </p>
+        </div>
+    </div>
+
+
+    <div id="intro">
+    <section>
+        <!-- section intro -->
+        <h1>
+            Welcome
+        </h1>
         <p>
-            🧷 Ma boite à outils 
-            <br />
-            Figma
-            <br />
-            Marvelapp
-            <br />
-            HTML / CSS / JS
-            <br />
-            Swift / Swift UI
-            <br />
-            Google Analytics
+            Je suis Hélène Delaporte, et après avoir vécu 7 ans entre le Brésil et le Portugal, j’ai quitté mon
+            poste de chef de projet Amélioration continue pour poser mes valises en France.
         </p>
+
+        <div id="objectif">
+            Mon objectif : continuer de mettre l’utilisateur au centre de mon travail avec une composante design +++
+        </div>
+    </section>
+    </div>
+
+
+
+    <div id="content">
+    <section>
+        <!-- section Expériences -->
+        <header>
+            <h2> Compétences & Expériences </h2>
+        </header>
+
+        <ul>
+            <!-- un-sorted list -->
+            <li>🎤 Mener des interviews utilisateurs</li>
+            <li>🤓 Collaborer avec une équipe de développeurs</li>
+            <li>🚀 Management fonctionnel des équipes Marketing et Commerciale</li>
+            <li>👀 Analyser les données et mettre en place des indicateurs business</li>
+            <li>📢 Travailler en lean management, CBL ou Co-création.</li>
+
+        </ul>
+    </section>
+
+    <section>
+        <!-- section PROJETS -->
+        <header>
+            <h1>Mes projets</h1>
+        </header>
+
+        <article>
+            <img src="images/growcity.png" alt="logo GrowCity" width="300">
+            <h3>GrowCity</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+        <article>
+            <img src="images/nash.png" alt="logo nash" width="300">
+            <h3>Nash</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <!-- comment faire une video <video src="images/demonash1.mp4" width="300" autoplay> </video> -->
+            <img src="images/nash_home.png" alt="nash home" width="150">
+            <img src="images/nash_map.png" alt="nash home" width="150">
+            <img src="images/nash_game.png" alt="nash home" width="150">
+    </section>
+    </div>
+
+    <div id="profil">
+        <img src="images/profil.jpg" alt="photo Hélène" width="200">
+    </div>
+
+    <aside>
+        <header>
+            <h1>Ma boite à outils</h1>
+        </header>
+        <ul>
+            <li>Figma</li>
+            <li>Marvelapp</li>
+            <li>HTML / CSS / JS</li>
+            <li>Swift / Swift UI</li>
+            <li>Google Analytics</li>
+        </ul>
     </aside>
 
 
-    <section>
-        <h1>
-            Mes projets
-        </h1>
-        <article>
-            <img src="images/growcity.png" alt="logo GrowCity" width="300">
-            <h2>
-                GrowCity
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </article>
 
-        <article>
-            <img src="images/nash.png" alt="logo Nash" width="300">
-            <h2>
-                Nash
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </article>
-
-
-
-
-
-    </section>
-
-
-
-
-<footer>
-    <br />
-    Retrouvez-moi ici
-    <br />
-    <br />
-    <div id="social">
-            <a href="https://www.instagram.com/neyneyne/" class="fa fa-instagram" target="_blank"></a></li>
-            <a href="https://github.com/hdelaporte" class="fa fa-github" target="_blank"></a></li>
-            <a href="https://twitter.com/hdelaporte1" class="fa fa-twitter" target="_blank"></a></li>
+    <footer>
+        Retrouvez-moi ici
+        <div class="social">
+            <a href="https://www.instagram.com/neyneyne/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://github.com/hdelaporte" class="fa fa-github" target="_blank"></a>
+            <a href="https://twitter.com/hdelaporte1" class="fa fa-twitter" target="_blank"></a>
             <a href="https://www.linkedin.com/in/hélène-delaporte-75166663/" class="fa fa-linkedin" target="_blank"></a>
-            </li>
-    </div>
-</footer>
+        
+        </div>
+    </footer>
 
+
+
+<script>
+
+    document.getElementById("button").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "flex";
+    })
+
+    document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+    })
+
+</script>
 
 
 

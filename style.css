@@ -1,0 +1,115 @@
+        html {
+            font-family: sans;
+            /* Taille : pas de ..px mmais bien"em" "1em" = 100% de la taille de défini par l'utilisateur sur son navigateur  */
+            font-size: 1em;
+        }
+
+        body {
+            width: 90%;
+            display: block;
+            padding: 10px;
+            float: center;
+        }
+
+        h1 {
+            color: #CE0033;
+            font-size: 1.3em;
+        }
+
+        h2 {
+            color: teal;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            color:gray;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: lightgoldenrodyellow;
+            float: right;
+            padding: 10px;
+        }
+
+        header {
+            background-size: cover;
+            width: 100%;
+        }        
+
+
+        body>section {
+            text-align: center;
+        }
+
+        article img {   
+            border-radius: 20px;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        ul,
+        li {
+            list-style-type: none;
+            display: block;
+        }
+
+        aside>header>h1::before {
+            content: "🧷";
+        }
+
+        #intro {
+            width : 65%;
+            border: 0 solid green;
+            float: left;
+        }
+
+        #profil {
+            width : 30%;
+            border: 0 solid red;
+            float : left;
+            text-align: right;
+        }
+
+        #content {
+            width: 65%;
+            border: 0 solid green;
+            float: left;
+        }
+
+        #profil img {
+            border-radius: 100px;
+        }
+
+        aside {
+            width: 30%;
+            border: 0 solid red;
+            float: left;
+            text-align: right;
+        }
+
+
+        footer {
+            background-color: rgb(239, 229, 242);
+            background-size: cover;
+            padding: 5px;
+            margin: 0;
+            border: 0;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            /* on ne veut rien à gauche ni à droite, donc : */
+            clear: both;
+        }
+
+        a {
+            color: gray;
+            padding: 10px;
+            transition: all 200ms ease-in-out;
+        }
+
+        a:hover {
+            color: #CE0033;
